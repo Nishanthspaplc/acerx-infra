@@ -1,8 +1,8 @@
 import type { IconName } from "../lib/icons";
 
-/** App store links — swap for the real ones when published. */
-export const APP_STORE_URL = "https://apps.apple.com/app/acre-x";
-export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.acrex";
+/** App store links. */
+export const APP_STORE_URL = "https://apps.apple.com/us/app/acre-x/id6762609505";
+export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.acrex.app";
 
 /** Single-page anchor navigation. */
 export const navLinks = [
