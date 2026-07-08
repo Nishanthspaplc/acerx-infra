@@ -7,7 +7,6 @@ import details from "../../assets/screens/details.png";
 import map from "../../assets/screens/map.png";
 import favorites from "../../assets/screens/favorites.png";
 import profile from "../../assets/screens/profile.png";
-import splashscreen from "../../assets/screens/splashscreen.png";
 
 const screens: Partial<Record<ScreenName, string>> = {
   Home: home,
@@ -16,7 +15,6 @@ const screens: Partial<Record<ScreenName, string>> = {
   Map: map,
   Favorites: favorites,
   Profile: profile,
-  Splash: "splashscreen", // handled by SplashScreen component
 };
 
 function SplashScreen() {
