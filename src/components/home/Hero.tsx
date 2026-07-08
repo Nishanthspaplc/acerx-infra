@@ -1,8 +1,9 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Download, ArrowRight, Star, BadgeCheck, MapPin } from "lucide-react";
+import { ArrowRight, Star, BadgeCheck, MapPin } from "lucide-react";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
+import DownloadAppButton from "../ui/DownloadAppButton";
 import Magnetic from "../ui/Magnetic";
 import AppStoreBadges from "../ui/AppStoreBadges";
 import PhoneMockup from "../ui/PhoneMockup";
@@ -62,9 +63,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.5 }}
               className="mt-6 max-w-xl text-lg leading-relaxed text-white/70"
             >
-              Acre-X is a modern property discovery platform. Find verified homes, plots,
-              builder floors and commercial spaces — and connect with trusted dealers, all
-              from one beautifully simple app.
+             Acre-X connects Owners, Brokers, Builders, and Buyers across Rohini, Delhi on one trusted platform. Explore verified plots and builder floors with interactive Sector, Block, and Pocket maps.
             </motion.p>
 
             <motion.div
@@ -74,9 +73,7 @@ export default function Hero() {
               className="mt-9 flex flex-wrap items-center gap-3"
             >
               <Magnetic>
-                <Button href="#download" variant="gold" className="!px-8">
-                  <Download className="h-4 w-4" /> Download App
-                </Button>
+                <DownloadAppButton variant="gold" className="!px-8" />
               </Magnetic>
               <Button href="#what" variant="ghost">
                 Learn More <ArrowRight className="h-4 w-4" />
@@ -96,7 +93,7 @@ export default function Hero() {
                     <Star key={s} className="h-4 w-4 fill-gold text-gold" />
                   ))}
                 </div>
-                <span><span className="font-semibold text-white">4.9</span> · loved by 50,000+ home seekers</span>
+                <span><span className="font-semibold text-white">4.9</span> · loved by 50,000+ Property Seekers</span>
               </div>
             </motion.div>
           </div>

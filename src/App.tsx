@@ -6,6 +6,7 @@ import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import GetApp from "./pages/GetApp";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/get-app" element={<GetApp />} />
         </Routes>
       </main>
       <Footer />

@@ -26,7 +26,7 @@ export default function DownloadCTA() {
                 Download <span className="text-gradient-gold">Acre-X</span> today.
               </h2>
               <p className="mt-5 max-w-md text-lg text-white/70">
-                Your next property is a tap away. Join 50,000+ home seekers discovering
+                Your next property is a tap away. Join 50,000+ Property Seekers discovering
                 verified properties the smarter way.
               </p>
             </Reveal>

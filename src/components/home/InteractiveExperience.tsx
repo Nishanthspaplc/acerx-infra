@@ -73,13 +73,13 @@ export default function InteractiveExperience() {
         <div className="grid items-center gap-14 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <Reveal>
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-gold">Interactive experience</p>
+              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-gold">Interactive Layout Maps</p>
               <h2 className="text-4xl font-semibold leading-tight sm:text-5xl">
-                Discovery that feels like <span className="text-gradient-navy">exploring.</span>
+                Explore Rohini <span className="text-gradient-navy">like never before.</span>
               </h2>
               <p className="mt-5 max-w-md text-lg text-muted">
-                Pan the map, tap a pin, save a favourite. Acre-X turns property hunting into
-                something you'll actually enjoy.
+                Navigate Rohini's Sector, Block, and Pocket layout maps, tap a pin, and instantly
+                see every verified listing at that exact location.
               </p>
             </Reveal>
 

@@ -19,14 +19,14 @@ export const capabilities: { icon: IconName; title: string; desc: string }[] = [
   { icon: "Layers", title: "Builder floors", desc: "Independent floors with full layouts and pricing." },
   { icon: "TreePine", title: "Open plots", desc: "Buildable land with clear titles and boundaries." },
   { icon: "Store", title: "Commercial spaces", desc: "High-yield shops, offices and showrooms." },
-  { icon: "HeartHandshake", title: "Trusted dealers", desc: "Connect directly with rated, verified dealers." },
+  { icon: "HeartHandshake", title: "Trusted Brokers/Builders", desc: "Connect directly with rated, verified dealers." },
   { icon: "Map", title: "Interactive maps", desc: "Discover what's around every property, live." },
 ];
 
 /** "Why Acre-X?" — large feature cards. */
 export const whyAcreX: { icon: IconName; title: string; desc: string }[] = [
   { icon: "BadgeCheck", title: "Verified Listings", desc: "No fake listings, ever. Each property passes a multi-point verification before it goes live." },
-  { icon: "HeartHandshake", title: "Trusted Dealers", desc: "Work only with rated, background-checked dealers who answer when it matters." },
+  { icon: "HeartHandshake", title: "Trusted Brokers/Builders", desc: "Work only with rated, background-checked dealers who answer when it matters." },
   { icon: "MapPinned", title: "Interactive Maps", desc: "Explore neighbourhoods, amenities and routes without leaving the app." },
   { icon: "Bell", title: "Real-Time Updates", desc: "The moment a property matching your taste appears, you'll know." },
   { icon: "Search", title: "Easy Discovery", desc: "Smart filters and instant search turn hours of hunting into minutes." },
@@ -41,22 +41,22 @@ export type ScreenName = (typeof appScreens)[number];
 
 /** "How it works" storytelling timeline. */
 export const howItWorks: { icon: IconName; step: string; title: string; desc: string }[] = [
-  { icon: "Smartphone", step: "01", title: "Open the App", desc: "Download Acre-X and set your city, budget and property type in seconds." },
-  { icon: "Search", step: "02", title: "Browse Verified Properties", desc: "Scroll through curated, verified listings — no noise, no fakes." },
-  { icon: "Heart", step: "03", title: "Choose Your Property", desc: "Shortlist favourites and compare them side by side." },
-  { icon: "CalendarCheck", step: "04", title: "Book a Site Visit", desc: "Pick a slot in-app and get a guided tour at your convenience." },
-  { icon: "MessageCircle", step: "05", title: "Connect with Experts", desc: "Chat directly with verified dealers and Acre-X advisors." },
-  { icon: "KeyRound", step: "06", title: "Own Your Property", desc: "We handle the paperwork, transparently, until the keys are yours." },
+  { icon: "MapPinned", step: "01", title: "Choose Your Sector", desc: "Start by selecting a Sector, Block, and Pocket in Rohini to access the corresponding interactive layout map." },
+  { icon: "Map", step: "02", title: "Explore the Layout Map", desc: "View the pocket layout with property pins. Each pin represents a verified plot or builder floor available in that location." },
+  { icon: "Search", step: "03", title: "Compare Verified Listings", desc: "Tap any property pin to see all available listings uploaded by verified Owners, Brokers, Dealers, and Builders." },
+  { icon: "Maximize2", step: "04", title: "View Complete Property Details", desc: "Compare pricing, area, images, specifications, and navigate directly to the property using Google Maps." },
+  { icon: "MessageCircle", step: "05", title: "Connect with the Property Builder or Broker", desc: "Contact the verified dealer, builder, or owner to discuss the property or schedule a site visit." },
+  { icon: "KeyRound", step: "06", title: "Buy or List with Confidence", desc: "Every listing is reviewed by Acre-X before publication, and owner approval protects properties from unauthorized listings, ensuring a transparent and trusted experience." },
 ];
 
 /** Interactive property experience — visual capability rows. */
 export const interactive: { icon: IconName; title: string; desc: string }[] = [
-  { icon: "Map", title: "Map discovery", desc: "Pan a live map and watch verified properties surface around you." },
-  { icon: "BadgeCheck", title: "Verified properties", desc: "A green badge you can trust — checked before it's listed." },
-  { icon: "HeartHandshake", title: "Dealer connections", desc: "Message rated dealers directly, no middlemen." },
-  { icon: "Layers", title: "Builder floor layouts", desc: "Explore floor plans, dimensions and pricing per unit." },
-  { icon: "Navigation", title: "Maps integration", desc: "Directions, nearby schools, transit and amenities, built in." },
-  { icon: "Heart", title: "Favorites", desc: "Save, organise and compare the properties you love." },
+  { icon: "Map", title: "Interactive Layout Maps", desc: "Sector → Block → Pocket, mapped for easy discovery." },
+  { icon: "MapPin", title: "Property Pins", desc: "Tap a pin to see every listing at that location." },
+  { icon: "BadgeCheck", title: "Admin Verified Listings", desc: "Reviewed and approved before it ever goes live." },
+  { icon: "HeartHandshake", title: "Trusted Property Network", desc: "Connect directly with owners, brokers and builders." },
+  { icon: "Navigation", title: "Google Maps Navigation", desc: "One tap to directions, straight to the site." },
+  { icon: "Eye", title: "Complete Property Details", desc: "Price, area, specs and images, all compared at a glance." },
 ];
 
 /** Trust section cards. */

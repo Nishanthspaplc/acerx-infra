@@ -16,8 +16,8 @@ export default function HowItWorks() {
       <Container>
         <SectionHeading
           eyebrow="How it works"
-          title="From first tap to front door."
-          desc="Six simple steps — the whole journey lives inside the Acre-X app."
+          title="From Layout Map to Your Next Property"
+          desc="Experience property discovery through Rohini's interactive layout maps in just six simple steps."
         />
 
         <div ref={ref} className="relative mx-auto mt-16 max-w-4xl">

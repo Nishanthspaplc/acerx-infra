@@ -9,9 +9,10 @@ const gallery: { screen: ScreenName; title: string; sub: string }[] = [
   { screen: "Home", title: "Home", sub: "Personalised picks the moment you land." },
   { screen: "Listings", title: "Verified listings", sub: "Only real, vetted properties." },
   { screen: "Details", title: "Property details", sub: "Everything you need on one screen." },
-  { screen: "Map", title: "Interactive map", sub: "Discover what's around, live." },
-  { screen: "Favorites", title: "Favorites", sub: "Save and compare what you love." },
-  { screen: "Profile", title: "Your profile", sub: "Visits, documents and support." },
+  { screen: "Map", title: "Listing Categories", sub: "Explore properties by category." },
+  { screen: "Favorites", title: "My Listings", sub: "Manage all your property listings." },
+  { screen: "Profile", title: "Your profile", sub: "View your information and settings." },
+  
 ];
 
 export default function ExperienceApp() {
@@ -40,12 +41,10 @@ export default function ExperienceApp() {
       <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden">
         <div className="pointer-events-none absolute inset-0 bg-aurora opacity-70" />
 
-        <Container className="relative z-10 shrink-0">
-          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold lg:[transform:translate(-65px,55px)]">Experience the app</p>
-          <h2 className="mt-3 max-w-2xl font-heading text-4xl font-semibold text-white sm:text-5xl lg:w-[576px] lg:max-w-none lg:[transform:translate(-65px,55px)]">
-            Seven screens. One seamless journey.
-          </h2>
-          <p className="mt-3 max-w-xl text-white/60 lg:[transform:translate(-69px,48px)]">Keep scrolling — the whole app glides past, just like you'd swipe through it.</p>
+        <Container className="relative z-10 shrink-0 text-center">
+          <p className="relative bottom-[-30px] text-sm font-semibold uppercase tracking-[0.22em] text-gold">Experience the app</p>
+          
+          {/* <p className="mx-auto mt-3 max-w-xl text-white/60">Keep scrolling — the whole app glides past, just like you'd swipe through it.</p> */}
         </Container>
 
         {/* horizontal rail */}

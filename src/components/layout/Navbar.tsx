@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { navLinks } from "../../data/content";
-import Button from "../ui/Button";
+import DownloadAppButton from "../ui/DownloadAppButton";
+import logo from "../../assets/AcreX_Logo.png";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -29,7 +30,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-gold to-[#8a6d3b] font-heading text-lg font-bold text-white">A</span>
+          <img src={logo} alt="Acre-X" className="h-8 w-8 rounded-lg object-cover" />
           <span className={`font-heading text-lg font-bold tracking-tight ${transparent ? "text-white" : "text-navy"}`}>
             Acre-X
           </span>
@@ -51,9 +52,7 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden lg:block">
-          <Button href={onHome ? "#download" : "/"} variant={transparent ? "gold" : "primary"} className="!px-6 !py-2.5">
-            <Download className="h-4 w-4" /> Download App
-          </Button>
+          <DownloadAppButton variant={transparent ? "gold" : "primary"} className="!px-6 !py-2.5" />
         </div>
 
         <button
@@ -87,9 +86,7 @@ export default function Navbar() {
                 </li>
               ))}
               <li className="mt-3">
-                <Button href={onHome ? "#download" : "/"} className="w-full" onClick={() => setOpen(false)}>
-                  <Download className="h-4 w-4" /> Download App
-                </Button>
+                <DownloadAppButton full />
               </li>
             </ul>
           </motion.div>

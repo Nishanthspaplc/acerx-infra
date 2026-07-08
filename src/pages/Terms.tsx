@@ -1,8 +1,9 @@
+import { Scale } from "lucide-react";
 import LegalPage from "../components/layout/LegalPage";
 
 export default function Terms() {
   return (
-    <LegalPage title="Terms & Conditions" updated="July 2026">
+    <LegalPage title="Terms & Conditions" updated="July 2026" icon={Scale}>
       <p>By using the Acre-X Infra website or mobile app, you agree to the following terms.</p>
       <h2>Use of Service</h2>
       <p>Listings are provided for informational purposes and subject to availability and verification.</p>

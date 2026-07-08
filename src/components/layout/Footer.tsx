@@ -4,6 +4,7 @@ import Container from "../ui/Container";
 import SocialIcon from "../ui/SocialIcon";
 import AppStoreBadges from "../ui/AppStoreBadges";
 import { footerLinks } from "../../data/content";
+import logo from "../../assets/AcreX_Logo.png";
 
 function FootLink({ href, label }: { href: string; label: string }) {
   const cls = "text-sm text-white/60 transition-colors hover:text-gold";
@@ -22,12 +23,12 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           <div>
             <Link to="/" className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-gold to-[#8a6d3b] font-heading text-lg font-bold text-white">A</span>
+              <img src={logo} alt="Acre-X" className="h-9 w-9 rounded-lg object-cover" />
               <span className="font-heading text-xl font-bold">Acre-X <span className="text-gold">Infra</span></span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
               Building tomorrow's communities. A modern property discovery platform — verified
-              listings, trusted dealers, one beautiful app.
+              listings, Trusted Brokers/Builders, one beautiful app.
             </p>
             <div className="mt-6 flex gap-3">
               {(["facebook", "instagram", "twitter", "linkedin"] as const).map((name) => (
