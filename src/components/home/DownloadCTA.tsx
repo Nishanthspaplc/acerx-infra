@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
-import { ScanLine, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import Container from "../ui/Container";
 import Reveal from "../ui/Reveal";
 import AppStoreBadges from "../ui/AppStoreBadges";
 import PhoneMockup from "../ui/PhoneMockup";
-import QrCode from "../ui/QrCode";
 
 const perks = ["Free to download", "No hidden charges", "Verified listings only"];
 
@@ -43,15 +42,8 @@ export default function DownloadCTA() {
             </Reveal>
 
             <Reveal delay={0.15}>
-              <div className="mt-9 flex flex-col gap-6 sm:flex-row sm:items-center">
-                <AppStoreBadges />
-                <div className="flex items-center gap-3">
-                  <QrCode className="w-28" />
-                  <div className="max-w-[8rem] text-sm text-white/60">
-                    <ScanLine className="mb-1 h-5 w-5 text-gold" />
-                    Scan to download on your phone
-                  </div>
-                </div>
+              <div className="mt-9">
+                <AppStoreBadges withQr />
               </div>
             </Reveal>
           </div>

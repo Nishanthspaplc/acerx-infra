@@ -1,4 +1,6 @@
 import { APP_STORE_URL, PLAY_STORE_URL } from "../../data/content";
+import appStoreQr from "../../assets/qr-codes/appstore-qr.png";
+import playStoreQr from "../../assets/qr-codes/playstor-qr.png";
 
 /** Official-style store badges — self-contained inline SVG, no external assets. */
 
@@ -27,47 +29,61 @@ export function PlayIcon({ className = "h-7 w-7 shrink-0" }: { className?: strin
   );
 }
 
-function AppleBadge() {
+function QrTile({ src, alt }: { src: string; alt: string }) {
   return (
-    <a
-      href={APP_STORE_URL}
-      target="_blank"
-      rel="noreferrer"
-      aria-label="Download on the App Store"
-      className="group inline-flex items-center gap-3 rounded-xl bg-navy px-5 py-3 text-white shadow-soft ring-1 ring-white/10 transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-lift"
-    >
-      <AppleIcon />
-      <span className="flex flex-col leading-none">
-        <span className="text-[10px] font-medium tracking-wide text-white/70">Download on the</span>
-        <span className="font-heading text-lg font-semibold">App Store</span>
-      </span>
-    </a>
+    <div className="rounded-xl bg-white p-2 shadow-soft ring-1 ring-line">
+      <img src={src} alt={alt} className="h-32 w-32 rounded-md" />
+    </div>
   );
 }
 
-function PlayBadge() {
+function AppleBadge({ withQr = false }: { withQr?: boolean }) {
   return (
-    <a
-      href={PLAY_STORE_URL}
-      target="_blank"
-      rel="noreferrer"
-      aria-label="Get it on Google Play"
-      className="group inline-flex items-center gap-3 rounded-xl bg-navy px-5 py-3 text-white shadow-soft ring-1 ring-white/10 transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-lift"
-    >
-      <PlayIcon />
-      <span className="flex flex-col leading-none">
-        <span className="text-[10px] font-medium tracking-wide text-white/70">GET IT ON</span>
-        <span className="font-heading text-lg font-semibold">Google Play</span>
-      </span>
-    </a>
+    <div className="flex flex-col items-center gap-3">
+      <a
+        href={APP_STORE_URL}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Download on the App Store"
+        className="group inline-flex items-center gap-3 rounded-xl bg-navy px-5 py-3 text-white shadow-soft ring-1 ring-white/10 transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-lift"
+      >
+        <AppleIcon />
+        <span className="flex flex-col leading-none">
+          <span className="text-[10px] font-medium tracking-wide text-white/70">Download on the</span>
+          <span className="font-heading text-lg font-semibold">App Store</span>
+        </span>
+      </a>
+      {withQr && <QrTile src={appStoreQr} alt="Scan to download on the App Store" />}
+    </div>
   );
 }
 
-export default function AppStoreBadges({ className = "" }: { className?: string }) {
+function PlayBadge({ withQr = false }: { withQr?: boolean }) {
   return (
-    <div className={`flex flex-wrap items-center gap-3 ${className}`}>
-      <AppleBadge />
-      <PlayBadge />
+    <div className="flex flex-col items-center gap-3">
+      <a
+        href={PLAY_STORE_URL}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Get it on Google Play"
+        className="group inline-flex items-center gap-3 rounded-xl bg-navy px-5 py-3 text-white shadow-soft ring-1 ring-white/10 transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-lift"
+      >
+        <PlayIcon />
+        <span className="flex flex-col leading-none">
+          <span className="text-[10px] font-medium tracking-wide text-white/70">GET IT ON</span>
+          <span className="font-heading text-lg font-semibold">Google Play</span>
+        </span>
+      </a>
+      {withQr && <QrTile src={playStoreQr} alt="Scan to download on Google Play" />}
+    </div>
+  );
+}
+
+export default function AppStoreBadges({ className = "", withQr = false }: { className?: string; withQr?: boolean }) {
+  return (
+    <div className={`flex flex-wrap items-start gap-4 ${className}`}>
+      <AppleBadge withQr={withQr} />
+      <PlayBadge withQr={withQr} />
     </div>
   );
 }
