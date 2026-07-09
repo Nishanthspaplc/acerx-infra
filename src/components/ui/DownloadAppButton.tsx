@@ -56,7 +56,7 @@ export default function DownloadAppButton({
       {open && (
         <div
           role="menu"
-          className="absolute right-0 z-50 mt-3 w-64 overflow-hidden rounded-2xl border border-line bg-white p-1.5 text-left shadow-lift"
+          className="absolute left-0 z-50 mt-3 w-64 max-w-[calc(100vw-2rem)] overflow-hidden rounded-2xl border border-line bg-white p-1.5 text-left shadow-lift sm:left-auto sm:right-0"
         >
           <a
             href={APP_STORE_URL}

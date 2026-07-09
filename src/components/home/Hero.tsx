@@ -72,7 +72,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.65 }}
               className="mt-9 flex flex-wrap items-center gap-3"
             >
-              <Magnetic>
+              <Magnetic className="relative z-20">
                 <DownloadAppButton variant="gold" className="!px-8" />
               </Magnetic>
               <Button href="#what" variant="ghost">
