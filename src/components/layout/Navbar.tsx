@@ -29,7 +29,11 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
-        <Link to="/" className="flex items-center gap-2">
+        <Link
+          to="/"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="flex items-center gap-2"
+        >
           <img src={logo} alt="Acre-X" className="h-8 w-8 rounded-lg object-cover" />
           <span className={`font-heading text-lg font-bold tracking-tight ${transparent ? "text-white" : "text-navy"}`}>
             Acre-X

@@ -56,9 +56,9 @@ export default function Footer() {
           <div>
             <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white/40">Contact</h4>
             <ul className="flex flex-col gap-3 text-sm text-white/60">
-              <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold" /> hello@acre-x.in</li>
-              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-gold" /> +91 98765 43210</li>
-              <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" /> Sector 24, Rohini, New Delhi</li>
+              <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold" /> support@acrexinfra.com</li>
+              <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-gold" /> +91 92170 59222</li>
+              <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" /> Plot No. 403-404, Sector 36, Pocket A1, Rohini, New Delhi, 110085</li>
             </ul>
           </div>
 
